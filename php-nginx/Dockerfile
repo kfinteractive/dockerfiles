@@ -22,4 +22,4 @@ ADD src/index.php /usr/share/nginx/html/index.php
 RUN rm /etc/init.d/nginx /etc/init.d/php5-fpm /etc/init.d/supervisor
 
 
-CMD ["/usr/bin/supervisord -n -c /etc/supervisord.conf" ]
+CMD ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisord.conf" ]
