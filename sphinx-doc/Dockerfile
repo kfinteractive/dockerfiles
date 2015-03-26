@@ -8,6 +8,7 @@ RUN easy_install -U Sphinx
 RUN easy_install -U sphinxcontrib-seqdiag
 RUN easy_install -U sphinxcontrib-blockdiag
 RUN easy_install -U sphinxcontrib-httpdomain
+RUN easy_install -U sphinxcontrib-phpdomain
 
 
 WORKDIR /doc
