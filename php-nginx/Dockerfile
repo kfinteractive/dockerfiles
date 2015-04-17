@@ -2,7 +2,7 @@ FROM nginx:latest
 
 MAINTAINER KFI pw@kf-interactive.com
 
-RUN apt-get update && apt-get install -y  curl imagemagick  mysql-client supervisor openssl ca-certificates php5-fpm php5-cli php5-curl php5-mcrypt php5-gd php5-common php5-mysql php5-xmlrpc php5-xsl php5-dev
+RUN apt-get update && apt-get install -y  curl imagemagick  mysql-client supervisor openssl ca-certificates php5-fpm php5-cli php5-curl php5-mcrypt php5-gd php5-common php5-mysql php5-xmlrpc php5-xsl php5-dev php5-memcached
 
 RUN groupadd --gid 1000 web
 RUN useradd --gid 1000 --uid 1000 web
